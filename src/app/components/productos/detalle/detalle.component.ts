@@ -12,7 +12,7 @@ import swal from 'sweetalert2';
 })
 export class DetalleComponent implements OnInit {
   @Input() producto: Producto;
-  private fotoSeleccionada: File;
+  fotoSeleccionada: File;
   constructor(private productoService:ProductosService,
     private activatedRoute:ActivatedRoute,
     public modalService:ModalService) { }
